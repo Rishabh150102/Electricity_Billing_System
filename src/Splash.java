@@ -4,7 +4,7 @@ import java.awt.*;
 public class Splash extends JFrame implements Runnable {
     Thread t;
     Splash(){
-
+        super("Welcome to Electricity Board");
         //use of image icon to load the image
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/elect.jpg"));
         //scaling image to perfectly fit image
@@ -42,6 +42,7 @@ public class Splash extends JFrame implements Runnable {
             setVisible(false);
 
             //open login frame
+            new Login();
         } catch (Exception e){
             e.printStackTrace();
         }
